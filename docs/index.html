@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Low Carbon Heating in Wallacetown</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Regeneration of Wallacetown District in Ayr." />
+    <meta name="author" content="University of Strathclyde" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/js-untar@2.0.0/build/dist/untar.js" defer></script>
+    <script src="js/video.js" defer></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <a class="navbar-no-hover" href="index" style="padding: 0">
+            <img src="assets/colour-logo-2-150x45.png" width="150" height="45" alt="Strath Logo" id="navbar-logo" />
+        </a>
+        <ul id="navbar-list">
+            <li class="nav-item">
+                <a class="navbar-link" href="background">Background</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="methodology">Methodology</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="results">Results</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="conclusion">Conclusion</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="theteam">The Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-link" href="resources">Resources</a>
+            </li>
+            <li class="nav-item">
+                <ul class="social">
+                    <li>
+                        <a href="https://github.com/isaacedwardtyler/isaacedwardtyler.github.io" target="_blank"><i class="fa-brands fa-github"> </i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.strath.ac.uk/research/energysystemsresearchunit/" target="_blank">
+                            <img class="navbar-icon" src="assets/ESRU_300x300.png" alt="ESRU" id="ESRU-logo" />
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <a id="nav-burger" onclick="toggleHamburgerMenu()"><i class="fa fa-bars"></i></a>
+    </header>
+    <div id="content">
+        <section id="jumbotron">
+            <div id="jumbotron-loading">
+                <p>Loading Sustainability</p>
+                <progress id="loading-bar" value="0" max="100" value="0"></progress>
+            </div>
+            <div id="jumbotron-sticky">
+                <div id="jumbotron-content-container">
+                    <div id="jumbotron-content">
+                        <div id="jumbotron-logo"><img src="assets/logo.png" /></div>
+                        <div id="jumbotron-text">
+                            <h1>Do you like space heating?</h1>
+                            <h2>Because we do.</h2>
+                        </div>
+                    </div>
+                    <div id="jumbotron-content-back">
+                        <div id="jumbotron-logo"><img src="assets/logo.png" /></div>
+                        <div id="jumbotron-text">
+                            <h1>Do you like space heating?</h1>
+                            <h2>Because we do.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="jumbotron-label" class="hidden">
+                    <h3>
+                        <!--<i><h4 style="color:#7e8aad; margin: 0;">Strathosphere II</h4></i>
+                        <span style="color: #8d8d8d;">International Rocket Week</span> <br>
+                        <span style="color: #8d8d8d;">August 27, 2023</span>-->
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <div class="section-content" id="about-text">
+                        <h1 class="show-on-scroll">
+                            2024 Project Team Undertaking Their MSc in Renewable Engineering
+                        </h1>
+                        <hr>
+                        <p class="show-on-scroll">
+                            We are the Low Carbon Heating Group focusing on future pathways for
+                            <a href="/background">Wallacetown</a>
+                            that can meet both Scotland's environmental demands and the areas economic needs as part of our
+                            <a href="https://www.strath.ac.uk/courses/postgraduatetaught/sustainableengineeringrenewableenergysystemstheenvironment/">MSc Sustainable Engineering: Renewable Energy Systems and Environment</a>
+                            degree
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-item-right">
+                    <img src="assets/theteam/circleteam.png" alt="theteam" style="width:100%">
+                </div>
+            </div>
+        </section>
+        <section class="section" id="projects">
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <img src="assets/netmap.png" alt="theteam" style="width:100%">
+                </div>
+                <div class="flex-item-right">
+                    <div class="section-content" id="project-text">
+                        <h1 class="show-on-scroll">Project</h1>
+                        <p class="show-on-scroll">
+                            The 2024 Wallacetown project team at Strathclyde are working on innovative proposals in the name of sustainability and equality.
+                            <a href="/background">Learn more about our project.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="join">
+            <div class="section-content" id="join-text">
+                <h1 class="show-on-scroll">Acknowledgements</h1>
+                <p class="show-on-scroll">
+                    We would like to foremost thank our supervisor Nicholas Kelly and our community liason Alan Roseweir, along
+                    with Paul Tuohy and our cohort for their valuable feedback throughout the process.
+                    <br />
+                    Credit goes to <a href="https://strathseds.org/">StrathSEDS</a> for the <a href="https://github.com/StrathSEDS-on-GitHub/website">open source website template</a> used here.
+                </p>
+            </div>
+        </section>
+        <section class="section" id="sponsors">
+            <div class="flex-container">
+                <div class="flex-item-full">
+                        <h1 class="show-on-scroll">Contact us!</h1>
+                        <p class="show-on-scroll">
+                            If you would like to know more about us and what we do please check out <a href="/theteam">our team</a>
+                        </p>
+                        <hr />
+                        <h1 class="show-on-scroll">Disclaimer</h1>
+                        <p class="show-on-scroll">
+                            The content presented on this website is the result of a university group project and is intended for academic purposes. The views and opinions expressed herein are those of the individual team members and do not necessarily reflect the views of the university or any affiliated organizations.
+                            <br /><br />
+                            While we have made our best efforts to ensure the accuracy and reliability of the information provided, we cannot guarantee its completeness or suitability for any particular purpose.
+                        </p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div id="footer-content">
+            <div id="footer-left">
+                <h3>MSc Sustainable Engineering: Renewable Energy Systems and Environment</h3>
+                <h4>
+                    The University of Strathclyde is a charitable body, registered in Scotland, number SC015263.
+                </h4>
+
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="https://github.com/isaacedwardtyler/isaacedwardtyler.github.io" target="_blank"><i class="fa-brands fa-github"> </i></a>
+                </li>
+                <li>
+                    <a href="https://www.strath.ac.uk/research/energysystemsresearchunit/" target="_blank">
+                        <img class="navbar-icon" src="assets/ESRU_300x300.png" alt="ESRU" id="ESRU-logo" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

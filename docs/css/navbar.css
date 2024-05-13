@@ -1,0 +1,134 @@
+#navbar-list > .nav-item a {
+  display: block;
+  color: white !important;
+  text-align: center;
+  padding: 11px 16px;
+  text-decoration: none;
+}
+
+#navbar-list .nav-item a:hover:not(.navbar-no-hover) {
+  border-bottom: 1px solid #fff;
+}
+
+#navbar {
+  font-family: "Hack", "Consolas", monospace;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 0;
+  position: fixed;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+#navbar-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 150px;
+}
+
+#navbar-list #strathunion-logo {
+  width: 17px;
+  height: 17px;
+}
+
+#navbar-list li:last-of-type {
+  margin-left: auto;
+}
+
+.social {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-icon {
+  height: 25px;
+  width: 25px;
+}
+
+#navbar-logo {
+  display: inline;
+  height: 45px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 10000;
+}
+
+#nav-burger {
+  display: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 0;
+  padding: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #navbar-list {
+    margin-top: 4rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  #nav-burger {
+    display: block;
+    margin-left: auto;
+  }
+  .expanded .nav-item {
+    display: block !important;
+  }
+  #navbar-list li:last-of-type {
+    margin-left: 0;
+  }
+  #social {
+    padding: 0;
+  }
+  #navbar {
+    align-items: unset;
+    min-height: 8%;
+  }
+  #navbar > * {
+    z-index: 1001;
+  }
+  #navbar-logo {
+    top: 10px;
+  }
+  #navbar.expanded-show-bg {
+    clip-path: rect(-100vw 200vw 150vw -100px round 500%) !important;
+  }
+  #navbar.expanded-show-bg > li{
+    display: block;
+  }
+  #navbar {
+    clip-path: rect(-100vw 200vw 8vh -100px) ;
+    transition: 0.4s ease-in-out;
+  }
+  #navbar-list {
+    margin-left: 0px;
+    padding-left: 0px;
+    transition: 0.4s ease-in-out;
+  }
+  #navbar-list > li{
+    display: none;
+  }
+  #navbar-list.expanded-show-bg {
+    height: "100%" !important;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */
